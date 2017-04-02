@@ -1,0 +1,21 @@
+<div>
+section#content
+  ol#links-list
+    - @links.each do |link|
+      li
+        span.link
+          = link_to link.title, link.url
+        span.details
+          - if link.user == current_user
+            = link_to "edit", edit_link_path(link)
+            = link_to "delete", link_path(link), method: :delete
+
+          p
+            |
+            posted by
+            = link_to link.user.username
+            = time_ago_in_words(link.created_at)
+            = link_to "upvote ", like_link_path(link), method: :put
+            = link_to "downvote ", dislike_link_path(link), method: :put
+            = link.score
+            = commontator_thread(link)

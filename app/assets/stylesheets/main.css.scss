@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+
+    li {
+      display:inline;
+      padding: 0.8em;
+
+      a {
+        text-decoration: none;
+        color:#d44343;
+        font-family:Futura;
+        font-style: italic;
+
+      }
+    }
+  }
+}
+
+.links {
+  float: left;
+}
+
+.auth {
+
+  float: right;
+}
+
+
+
+.details a {
+  padding: 0.6em;
+}
+
+#links-list li {
+  padding: 0.8em;
+  a {
+    font-family:Futura;
+    color: #d44343;
+  }
+}

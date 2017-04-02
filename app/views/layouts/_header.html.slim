@@ -1,0 +1,11 @@
+    header.navbar
+      ul.links
+        li = link_to image_tag("bc.png"), root_path
+      ul.auth
+        - if user_signed_in?
+          li = link_to "Submit", 'links/new'
+          li = link_to 'Edit profile', edit_user_registration_path
+          li = link_to 'Logout', destroy_user_session_path, :method => :delete
+        - else
+          li = link_to 'Login', new_user_session_path
+          li = link_to 'Signup', new_user_registration_path

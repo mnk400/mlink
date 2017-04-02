@@ -1,0 +1,11 @@
+<div class='frm'>
+<h1>Submit a Link</h1>
+
+<%= form_for :link, :url => {:action => :create} do |f| %>
+<p class='a'> Title :
+<%= f.text_field :title %><br><br></p>
+<p class='b'> URL :
+<%= f.text_field :url %><br><br></p>
+<%= f.button :submit %>
+<% end %>
+</div>
