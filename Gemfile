@@ -12,6 +12,9 @@ gem 'rails', '~> 5.0.2'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+group :development do
+  gem "rails-erd"
+end
 gem 'slim-rails'
 gem 'commontator'
 gem 'devise'
