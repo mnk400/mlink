@@ -1,24 +1,23 @@
-# README
+A link aggregator application in rails, which was coded in a hurry. Please don't mind the inconsistency.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version 2.3.1
+Rails version 5 beta 3
 
-Things you may want to cover:
+to install follow the following steps
 
-* Ruby version
+'Git clone https://github.com/mnk400/mlink.git'
 
-* System dependencies
+$ cd mlink
 
-* Configuration
+$ bundle
 
-* Database creation
+$ rails s
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Uses SQlite.
+Does not have any admin account.
+Uses the following gems
+- Slim
+- Devise
+- Simple form
+- Acts_as Votable
+- Commontator
