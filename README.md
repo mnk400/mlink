@@ -21,3 +21,4 @@ Uses the following gems
 - Simple form
 - Acts_as Votable
 - Commontator
+- ERD
