@@ -1,4 +1,5 @@
 #Link Aggregator
+
 A link aggregator called rordit(cause reddit lol) application in rails, which was coded in a hurry. Please don't mind the inconsistency.
 
 Ruby version 2.3.1
