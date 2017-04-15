@@ -22,9 +22,13 @@ group :development do
   gem "rails-erd"
 end
 gem 'slim-rails'
+# Slim
 gem 'commontator'
+# To add comments
 gem 'devise'
+# To add User Authetication
 gem 'simple_form'
+# Simple Forms
 gem 'acts_as_votable'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

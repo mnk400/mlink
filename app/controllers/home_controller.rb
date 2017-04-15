@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def home
-  @links = Link.all
+   @links = Link.all
   end
 end

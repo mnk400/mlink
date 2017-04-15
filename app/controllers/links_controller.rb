@@ -41,6 +41,11 @@ class LinksController < ApplicationController
   redirect_to:back
   end
 
+  def url_with_protocol(abc)
+      /^http/i.match(abc) ? url : "http://#{abc}"
+  end
+
+
   def destroy
     @link = Link.find(params[:id])
     if @link.user == current_user
